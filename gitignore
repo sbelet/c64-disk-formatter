@@ -1,0 +1,17 @@
+# KickAssembler output
+*.prg
+*.sym
+*.vs
+*.dbg
+*.log
+
+# VICE files
+*.d64
+*.g64
+*.t64
+*.crt
+*.vsf
+
+# OS files
+.DS_Store
+Thumbs.db
