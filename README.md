@@ -19,14 +19,15 @@ A fast disk formatter and verifier for the Commodore 64 + 1541 disk drive family
 
 ## Screenshots
 
-*(Add your VICE screenshots here)*
+<img width="384" height="272" alt="vice-screen-2026030623110038" src="https://github.com/user-attachments/assets/f9542746-d3dd-4cea-9349-f5eb57e03c2d" />
+
 
 ## Building
 
 Requires [KickAssembler](http://theweb.dk/KickAssembler/):
 
 ```
-java -jar KickAss.jar formatter_step14.asm -o formatter.prg
+java -jar KickAss.jar formatter.asm -o formatter.prg
 ```
 
 Load and run on a C64 (or VICE emulator):
