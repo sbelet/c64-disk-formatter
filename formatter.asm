@@ -7,12 +7,12 @@
 // Drive memory map:
 //   $0300-$031E  Launcher (31 bytes) - M-E $0300 for format
 //   $0320-$037C  Fast verify - interleaved +11 read, M-E $0320
-//                  Patch: $06FF=sector count, $06FE=busy flag
-//                  Bitmap: $06E0-$06F4
+//                Patch: $06FF=sector count, $06FE=busy flag
+//                Bitmap: $06E0-$06F4
 //   $0400-$054D  Format engine (334 bytes) with embedded:
-//     $0438-$0442  Read routine (unused now)
-//     $0443-$044D  Write routine - M-E $0443 for BAM/DIR
-//     $044E-$0477  Verify routine (old sequential, unused)
+//   $0438-$0442  Read routine (unused now)
+//   $0443-$044D  Write routine - M-E $0443 for BAM/DIR
+//   $044E-$0477  Verify routine (old sequential, unused)
 //   $01BB-$01FF  GCR block 1 (69 bytes)
 //   $0700-$07FF  GCR block 2 (256 bytes)
 //
@@ -2109,9 +2109,9 @@ waitReturn:
 // ---- Convert error count to screencode (non-reverse) ----
 // Input: A = error count (0-21)
 // Output: A = screencode
-//   0-9 -> '0'-'9'
+//     0-9 -> '0'-'9'
 //   10-15 -> 'A'-'F'
-//   16+ -> 'G'+
+//     16+ -> 'G'+
 errToChar:
         cmp #10
         bcs etcAlpha
