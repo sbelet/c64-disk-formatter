@@ -84,4 +84,4 @@ Completion is detected via a busy flag at $06FE: C64 sets it to $FF before M-E, 
 
 ## License
 
-*(Add your preferred license here)*
+MIT License
